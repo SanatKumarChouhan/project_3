@@ -55,6 +55,32 @@ public final class ModelFactory {
 
 		return userModel;
 	}
+	
+	public CartModelInt getCartModel() {
+
+		CartModelInt cartModel = (CartModelInt) modelCache.get("cartModel");
+		if (cartModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				cartModel = new CartModelHibImp();
+			}
+			modelCache.put("cartModel", cartModel);
+		}
+
+		return cartModel;
+	}
+	
+	public TransportationModelInt getTransportationModel() {
+
+		TransportationModelInt transportationModel = (TransportationModelInt) modelCache.get("transportationModel");
+		if (transportationModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				transportationModel = new TransportationModelHibImp();
+			}
+			modelCache.put("cartModel", transportationModel);
+		}
+
+		return transportationModel;
+	}
 
 	public MarksheetModelInt getMarksheetModel() {
 		MarksheetModelInt marksheetModel = (MarksheetModelInt) modelCache.get("marksheetModel");

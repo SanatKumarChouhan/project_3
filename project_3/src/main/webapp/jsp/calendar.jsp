@@ -59,6 +59,17 @@
 		yearRange : "-40:-18"
 		});
 	});
+  
+  $( function() {
+	    $( "#datepicker3" ).datepicker({
+	      changeMonth: true,
+	      changeYear: true,
+	      yearRange : '1972:2025',
+			dateFormat : 'mm/dd/yy',
+			endDate : '+1m',
+				maxDate:0 
+	    });
+	  } );
 	  </script>
 </head>
 <body>

@@ -7,6 +7,9 @@ public interface ORSView {
 
 	public String JAVA_DOC_VIEW = APP_CONTEXT + "/doc/index.html";
 
+	/*----------------------------jsp's---------------------------------*/
+	/*----------------------------jsp's---------------------------------*/
+
 	public String ERROR_VIEW = PAGE_FOLDER + "/ErrorView404.jsp";
 	public String Employee_VIEW = PAGE_FOLDER + "/EmployeeView.jsp";
 	public String Employee_LIST_VIEW = PAGE_FOLDER + "/EmployeeListView.jsp";
@@ -42,6 +45,14 @@ public interface ORSView {
 	public String SUBJECT_VIEW = PAGE_FOLDER + "/SubjectView.jsp";
 	public String SUBJECT_LIST_VIEW = PAGE_FOLDER + "/SubjectListView.jsp";
 
+	public String CART_LIST_VIEW = PAGE_FOLDER + "/CartListView.jsp";
+	public String CART_VIEW = PAGE_FOLDER + "/CartView.jsp";
+	
+	public String TRANSPORTATION_LIST_VIEW = PAGE_FOLDER + "/TransportationListView.jsp";
+	public String TRANSPORTATION_VIEW = PAGE_FOLDER + "/TransportationView.jsp";
+
+	/*--------------------------------ctl's-------------------------------------------*/
+	/*--------------------------------ctl's-------------------------------------------*/
 	public String ERROR_CTL = APP_CONTEXT + "/ErrorCtl";
 	public String Employee_CTL = APP_CONTEXT + "/ctl/EmployeeCtl";
 	public String Employee_LIST_CTL = APP_CONTEXT + "/ctl/EmployeeListCtl";
@@ -76,4 +87,10 @@ public interface ORSView {
 	public String MY_PROFILE_CTL = APP_CONTEXT + "/ctl/MyProfileCtl";
 	public String FORGET_PASSWORD_CTL = APP_CONTEXT + "/ForgetPasswordCtl";
 	public String MARKSHEET_MERIT_LIST_CTL = APP_CONTEXT + "/ctl/MarksheetMeritListCtl";
+	
+	public String CART_LIST_CTL = APP_CONTEXT + "/ctl/CartListCtl";
+	public String CART_CTL = APP_CONTEXT + "/ctl/CartCtl";
+	
+	public String TRANSPORTATION_LIST_CTL = APP_CONTEXT + "/ctl/TransportationListCtl";
+	public String TRANSPORTATION_CTL = APP_CONTEXT + "/ctl/TransportationCtl";
 }
