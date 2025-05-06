@@ -47,9 +47,6 @@ public interface ORSView {
 
 	public String CART_LIST_VIEW = PAGE_FOLDER + "/CartListView.jsp";
 	public String CART_VIEW = PAGE_FOLDER + "/CartView.jsp";
-	
-	public String TRANSPORTATION_LIST_VIEW = PAGE_FOLDER + "/TransportationListView.jsp";
-	public String TRANSPORTATION_VIEW = PAGE_FOLDER + "/TransportationView.jsp";
 
 	/*--------------------------------ctl's-------------------------------------------*/
 	/*--------------------------------ctl's-------------------------------------------*/
@@ -87,10 +84,8 @@ public interface ORSView {
 	public String MY_PROFILE_CTL = APP_CONTEXT + "/ctl/MyProfileCtl";
 	public String FORGET_PASSWORD_CTL = APP_CONTEXT + "/ForgetPasswordCtl";
 	public String MARKSHEET_MERIT_LIST_CTL = APP_CONTEXT + "/ctl/MarksheetMeritListCtl";
-	
+
 	public String CART_LIST_CTL = APP_CONTEXT + "/ctl/CartListCtl";
 	public String CART_CTL = APP_CONTEXT + "/ctl/CartCtl";
-	
-	public String TRANSPORTATION_LIST_CTL = APP_CONTEXT + "/ctl/TransportationListCtl";
-	public String TRANSPORTATION_CTL = APP_CONTEXT + "/ctl/TransportationCtl";
+
 }

@@ -65,8 +65,8 @@ public class CartCtl extends BaseCtl {
 			pass = false;
 
 		}
-		if (DataValidator.isNull(request.getParameter("productName"))) {
-			request.setAttribute("productName", PropertyReader.getValue("error.require", "Product Name"));
+		if (DataValidator.isNull(request.getParameter("product"))) {
+			request.setAttribute("product", PropertyReader.getValue("error.require", "Product Name"));
 			System.out.println(pass);
 			pass = false;
 		}
@@ -103,7 +103,7 @@ public class CartCtl extends BaseCtl {
 
 		dto.setCustomerName(DataUtility.getString(request.getParameter("customerName")));
 
-		dto.setProductName(DataUtility.getString(request.getParameter("productName")));
+		dto.setProductName(DataUtility.getString(request.getParameter("product")));
 		dto.setTransactionDate(DataUtility.getDate(request.getParameter("tDate")));
 
 		dto.setProductQuantity(DataUtility.getInt(request.getParameter("productQuantity")));

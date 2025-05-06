@@ -59,7 +59,7 @@ public class CartListCtl extends BaseCtl {
 		CartDTO dto = new CartDTO();
 
 		dto.setCustomerName(DataUtility.getString(request.getParameter("customerName")));
-		dto.setProductName(DataUtility.getString(request.getParameter("productName")));
+		dto.setProductName(DataUtility.getString(request.getParameter("product")));
 		dto.setTransactionDate(DataUtility.getDate(request.getParameter("tDate")));
 		dto.setProductQuantity(DataUtility.getInt(request.getParameter("productQuantity")));
 		populateBean(dto, request);

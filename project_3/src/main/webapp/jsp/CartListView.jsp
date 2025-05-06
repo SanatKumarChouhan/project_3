@@ -132,12 +132,12 @@
 
 				&emsp;
 				<%-- <div class="col-sm-2">
-					<input type="text" name="productName" placeholder="Enter Product Name"
+					<input type="text" name="product" placeholder="Enter Product Name"
 						class="form-control"
-						value="<%=ServletUtility.getParameter("productName", request)%>">
+						value="<%=ServletUtility.getParameter("product", request)%>">
 				</div> --%>
 				&emsp;
-				<div class="col-sm-2"><%=HTMLUtility.getList2("productName", String.valueOf(dto.getProductName()), map)%></div>
+				<div class="col-sm-2"><%=HTMLUtility.getList2("product", String.valueOf(dto.getProductName()), map)%></div>
 				&emsp;
 				<%-- &emsp;
 				<div class="col-sm-2"><%=HTMLUtility.getList("fName", String.valueOf(dto.getFirstName()), uList)%></div>
@@ -145,7 +145,7 @@
 
 				<div class="col-sm-2">
 					<input type="text" name="tDate" class="form-control"
-						placeholder="Enter Transaction Date" id="datepicker2"
+						placeholder="Enter Transaction Date" id="datepicker3"
 						readonly="readonly"
 						value="<%=DataUtility.getDateString(dto.getTransactionDate())%>">
 				</div>

@@ -51,8 +51,9 @@
 		<mapping
 			resource="in/co/rays/project_3/hbm/EmployeeDTO.hbm.xml" />
 
+		
 		<mapping resource="in/co/rays/project_3/hbm/CartDTO.hbm.xml" />
-		<mapping resource="in/co/rays/project_3/hbm/TransportationDTO.hbm.xml" />
+
 
 		<!--<mapping class="in.co.rays.project_3.dto.UserDTO"/> <mapping class="in.co.rays.project_3.dto.CollegeDTO"/> 
 			<mapping class="in.co.rays.project_3.dto.CourseDTO"/> <mapping class="in.co.rays.project_3.dto.FacultyDTO"/> 

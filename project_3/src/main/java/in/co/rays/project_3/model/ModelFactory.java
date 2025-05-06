@@ -55,7 +55,7 @@ public final class ModelFactory {
 
 		return userModel;
 	}
-	
+
 	public CartModelInt getCartModel() {
 
 		CartModelInt cartModel = (CartModelInt) modelCache.get("cartModel");
@@ -67,19 +67,6 @@ public final class ModelFactory {
 		}
 
 		return cartModel;
-	}
-	
-	public TransportationModelInt getTransportationModel() {
-
-		TransportationModelInt transportationModel = (TransportationModelInt) modelCache.get("transportationModel");
-		if (transportationModel == null) {
-			if ("Hibernate".equals(DATABASE)) {
-				transportationModel = new TransportationModelHibImp();
-			}
-			modelCache.put("cartModel", transportationModel);
-		}
-
-		return transportationModel;
 	}
 
 	public MarksheetModelInt getMarksheetModel() {

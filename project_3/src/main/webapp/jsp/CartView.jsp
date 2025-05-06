@@ -140,10 +140,10 @@ i.css {
 												<i class="fa fa-user grey-text" style="font-size: 1rem;"></i>
 											</div>
 										</div>
-										<%=HTMLUtility.getList("productName", String.valueOf(dto.getProductName()), pList)%>
+										<%=HTMLUtility.getList("product", String.valueOf(dto.getProductName()), pList)%>
 									</div>
 								</div>
-								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("productName", request)%>
+								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("product", request)%>
 								</font> --%>
 								<span class="pl-sm-5"><b>Product Name</b><span
 									style="color: red;">*</span></span> </br>
@@ -152,18 +152,18 @@ i.css {
 									<div class="input-group">
 										<div class="input-group-prepend">
 											<div class="input-group-text">
-												<i class="fas fa-laptop" style="font-size: 1rem;"></i>
+												<i class="fas fa-cart-arrow-down" style="font-size: 1rem;"></i>
 											</div>
 										</div>
 
 										<%
-											String htmlList = HTMLUtility.getList2("productName", String.valueOf(dto.getProductName()), pList);
+											String htmlList = HTMLUtility.getList2("product", String.valueOf(dto.getProductName()), pList);
 										%>
 										<%=htmlList%>
 									</div>
 
 								</div>
-								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("productName", request)%>
+								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("product", request)%>
 								</font></br> <span class="pl-sm-5"><b>Transaction Date</b> <span
 									style="color: red;">*</span></span></br>
 								<div class="col-sm-12">
@@ -173,7 +173,7 @@ i.css {
 												<i class="fa fa-calendar grey-text" style="font-size: 1rem;"></i>
 											</div>
 										</div>
-										<input type="text" id="datepicker2" name="tDate"
+										<input type="text" id="datepicker3" name="tDate"
 											class="form-control" placeholder="Select Transaction Date"
 											readonly="readonly"
 											value="<%=DataUtility.getDateString(dto.getTransactionDate())%>">
@@ -186,7 +186,7 @@ i.css {
 									<div class="input-group">
 										<div class="input-group-prepend">
 											<div class="input-group-text">
-												<i class="fas fa-plus" style="font-size: 1rem;"></i>
+												<i class="fas fa-cart-plus" style="font-size: 1rem;"></i>
 											</div>
 										</div>
 										<input type="text" class="form-control" name="productQuantity"
